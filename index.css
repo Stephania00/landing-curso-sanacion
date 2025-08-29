@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
+
+* {
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+@theme {
+  --breakpoint-xxs: 21.25rem; /* 340px */
+  --breakpoint-xs: 23.125rem; /* 363px */
+  --breakpoint-xxl: 82.5rem; /* 1320px */
+  --color-picto-primary: #003f59; /* azul oscuro Pantone 655 C */
+  --color-picto-primary-dark: #002d40; /* azul más oscuro para hover sutil */
+  --color-soft-white: #f0f1f3;
+  --color-soft-dark: #87909d;
+  --color-highlight-yellow: #ffbf00; /* amarillo Pantone 7549 C */
+}
+
+/* Botón principal: azul oscuro con hover amarillo dorado */
+.btn-primary {
+  @apply border-0 text-white hover:scale-[102%] transition-all duration-500;
+  background-color: var(--color-picto-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-highlight-yellow);
+  color: var(--color-picto-primary); /* texto azul oscuro sobre amarillo */
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.content {
+  @apply max-xxl:w-full xxl:max-w-[1320px] xxl:mx-auto;
+}
+
+.section-title {
+  @apply md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
+
+/* Fondos de secciones ajustados a la nueva paleta */
+.introduction-profile-background {
+  background: radial-gradient(
+      circle at 12% 100%,
+      #ffe2b0f5 1% 5px,
+      transparent 15%
+    ),
+    radial-gradient(circle at 95% -15%, #003f59b2 5%, transparent 30%),
+    radial-gradient(circle at center right, #c4f5e9b2 2%, transparent 35%);
+}
+
+.blog-background {
+  background: radial-gradient(circle at -10% 0%, #003f59b2 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, #003f59b2 5%, transparent 25%);
+}
