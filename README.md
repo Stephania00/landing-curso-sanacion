@@ -24,15 +24,3 @@ desarrollada a partir de la inspiración de **Picto (ThemeWagon)**
 - [TailwindCSS](https://tailwindcss.com/)  
 - Deploy: [Vercel](https://vercel.com/)  
 
----
-
-## ⚙️ Instalación
-```bash
-# Clonar el proyecto
-git clone <url-repo>
-
-# Instalar dependencias
-npm i
-
-# Levantar el servidor
-npm run dev
