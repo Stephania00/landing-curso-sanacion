@@ -1,6 +1,6 @@
 # ✍️ Escritura para la Sanación - Landing Page
 
-Landing page desarrollada a partir de la plantilla **Picto (ThemeWagon)**, personalizada y optimizada para la venta de talleres online.  
+Landing page, personalizada y optimizada para la venta de talleres online.  
 Incluye copywriting emocional, estructura orientada a conversión y flujos de automatización gratuitos.
 
 ---
@@ -15,12 +15,14 @@ Incluye copywriting emocional, estructura orientada a conversión y flujos de au
 - 💸 Integración con **Nequi/Daviplata (QR modal)** para pagos locales.
 - 🤖 Opcional: mini-agente FAQ con IA (para responder preguntas frecuentes del taller).
 
+desarrollada a partir de la inspiración de **Picto (ThemeWagon)**
+
 ---
 
 ## 🛠️ Stack
 - [React + Vite](https://vitejs.dev/)  
 - [TailwindCSS](https://tailwindcss.com/)  
-- Deploy recomendado: [Vercel](https://vercel.com/)  
+- Deploy: [Vercel](https://vercel.com/)  
 
 ---
 
