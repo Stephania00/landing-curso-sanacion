@@ -1,18 +1,19 @@
 const InformationSummary = ({ item }) => {
   return (
-    <div className={`bg-[#F6EBFE] text-center`}>
-      <div className="w-auto h-auto mx-2 sm:mx-4 my-5 xxs:my-5 sm:my-[17px]">
-        <p
-          className={`text-[16px] xxs:text-[18px] sm:text-[32px] font-semibold text-gray-700`}
-        >
-          {item.description}
-        </p>
-        <p
-          className={`text-[8px] xxs:text-[9px] sm:text-[16px] font-normal px-[0.90rem] sm:px-[1rem] text-wrap text-gray-500`}
-        >
-          {item.title}
-        </p>
-      </div>
+    <div className="bg-white flex flex-col justify-center items-center text-center rounded-2xl shadow-md border border-[#003f59]/20 transition-transform hover:scale-105 hover:shadow-lg duration-300 p-4 sm:p-6 lg:p-8 h-full min-h-[120px] sm:min-h-[140px]">
+      
+      {/* Título principal */}
+      <p className="text-sm sm:text-base lg:text-lg font-semibold text-[#003f59] leading-snug mb-3">
+        {item.description}
+      </p>
+
+      {/* Subtítulo */}
+      <p className="text-xs sm:text-sm font-normal text-gray-600 mb-4">
+        {item.title}
+      </p>
+
+      {/* Línea decorativa */}
+      <div className="h-[3px] w-8 sm:w-12 rounded-full bg-[#ffbf00]" />
     </div>
   );
 };

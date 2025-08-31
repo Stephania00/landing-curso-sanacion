@@ -6,76 +6,72 @@ import InformationSummary from "./InformationSummary";
 const informationSummaryData = [
   {
     id: 1,
-    title: "🌿 Conexión",
-    description: "Emociones profundas",
+    title: "🌿 Ansiedad → Claridad",
+    description: "Calma el caos mental",
   },
   {
     id: 2,
-    title: "✍️ Escritura",
-    description: "Herramientas sanadoras",
+    title: "🌸 Heridas → Sanación", 
+    description: "Procesa el dolor pasado",
   },
   {
     id: 3,
-    title: "🌸 Fortaleza",
-    description: "Cuidado y compasión",
+    title: "✍️ Silencio → Voz",
+    description: "Encuentra tu expresión",
   },
 ];
 
 const Introduction = () => {
   return (
     <div
-      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4"
+      className="relative mx-auto max-w-7xl z-10 rounded-b-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:px-28 xl:pb-28 lg:px-20 lg:pb-20 md:px-16 md:pb-16 sm:px-10 sm:pb-10 px-6 pb-4 pt-16 lg:pt-24 xl:pt-32"
       id="introduction"
     >
-      <div className="w-full flex flex-col justify-between max-lg:text-center">
-        <div className="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
-          {/* Título emocional */}
-          <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
-            Encuentra tu calma
-          </p>
+      <div className="flex max-md:flex-col justify-center lg:justify-between items-center gap-8 lg:gap-12">
+        {/* Contenido de texto con proporciones del Profile */}
+        <div className="max-sm:w-full w-[38rem] lg:w-[40rem] max-md:text-center">
+          {/* Título principal */}
+          <h2 className="text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8">
+            ¿Sientes que tus emociones te desbordan pero no sabes cómo procesarlas?
+          </h2>
 
-          {/* Subtítulo liberador */}
-          <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            <span className="bg-highlight">Escritura para la sanación</span> 
-            es un taller íntimo para transformar emociones, recuerdos y deseos 
-            en claridad, fortaleza y conexión contigo misma.
-          </p>
+          {/* Descripción principal */}
+          <div className="text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600">
+            <p>
+              <span className="bg-highlight">Escritura para la sanación:</span> 8 sesiones íntimas para transformar dolor en palabras, caos en claridad, y silencio en voz propia.
+            </p>
+            <p className="mt-3">
+            </p>
+          </div>
 
-          {/* CTA principal */}
-          <p className="text-center lg:text-start">
+          {/* CTA Button - Actualizado con link hacia servicios */}
+          <div className="mt-8 flex max-md:justify-center">
             <a
-              className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:example@gmail.com"
+              className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
+              href="#planes"
             >
-              Inscríbete ahora – Cupos limitados
+              Reservar mi cupo ahora
             </a>
-          </p>
+          </div>
 
-          {/* Frase inspiradora debajo del CTA */}
-          <p className="text-xs lg:text-sm italic mt-4 opacity-80">
-            La sociedad premia la productividad y castiga la sensibilidad. Este taller es un refugio y una resistencia a la exigencia que olvida sentir.
-          </p>
-        </div>
-
-        {/* Bullets destacados */}
-        <div className="mx-auto lg:mx-0 relative">
-          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-10 gap-1">
-            {informationSummaryData.map((item) => (
-              <InformationSummary key={item.id} item={item} />
-            ))}
+          {/* Bullets destacados */}
+          <div className="mt-8 max-md:flex max-md:justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl">
+              {informationSummaryData.map((item) => (
+                <InformationSummary key={item.id} item={item} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Imagen */}
-      <div
-        className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative`}
-      >
-        <img
-          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl`}
-          src={person}
-          alt="person"
-        />
+        {/* Imagen */}
+        <div className="max-w-134 w-full h-full max-md:mx-auto aspect-[536/636] relative flex items-center">
+          <img
+            className="shadow-2xl shadow-gray-200 w-full h-full object-cover bg-white rounded-3xl"
+            src={person}
+            alt="Silvia Rivera - Facilitadora de Escritura Sanadora"
+          />
+        </div>
       </div>
     </div>
   );
