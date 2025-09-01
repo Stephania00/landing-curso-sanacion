@@ -13,9 +13,9 @@ Incluye copywriting emocional, estructura orientada a conversión y flujos de au
 - 💬 **Testimonios** iniciales (placeholder, reemplazables por clientes reales).
 - 📝 Formulario de inscripción conectado a **Google Sheets**.
 - 💸 Integración con **Nequi/Daviplata (QR modal)** para pagos locales.
-- 🤖 Opcional: mini-agente FAQ con IA (para responder preguntas frecuentes del taller).
+- 🤖 Mini-agente FAQ con IA (para responder preguntas frecuentes del taller).
 
-desarrollada a partir de la inspiración de **Picto (ThemeWagon)**
+desarrollada a partir de la inspiración Mockup de **Picto (ThemeWagon)**
 
 ---
 
